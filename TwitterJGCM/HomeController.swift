@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LBTAComponents
 
 class WordCell: UICollectionViewCell {
     override init(frame: CGRect) {

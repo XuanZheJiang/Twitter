@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28347B98FFFF9C37235D7A7D /* Pods_TwitterJGCM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86CCB0F2B386661B01B04F3 /* Pods_TwitterJGCM.framework */; };
 		FA2618441EA5140400E6C3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2618431EA5140400E6C3D9 /* AppDelegate.swift */; };
 		FA26184B1EA5140400E6C3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA26184A1EA5140400E6C3D9 /* Assets.xcassets */; };
 		FA26184E1EA5140400E6C3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA26184C1EA5140400E6C3D9 /* LaunchScreen.storyboard */; };
 		FA2618561EA5156400E6C3D9 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2618551EA5156400E6C3D9 /* HomeController.swift */; };
+		FA2618581EA6696C00E6C3D9 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2618571EA6696C00E6C3D9 /* HomeDatasourceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B321C705DE1127E50E77C88 /* Pods-TwitterJGCM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterJGCM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterJGCM/Pods-TwitterJGCM.debug.xcconfig"; sourceTree = "<group>"; };
+		C66A7817CB96649C59FBE8CC /* Pods-TwitterJGCM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterJGCM.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterJGCM/Pods-TwitterJGCM.release.xcconfig"; sourceTree = "<group>"; };
+		E86CCB0F2B386661B01B04F3 /* Pods_TwitterJGCM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterJGCM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2618401EA5140400E6C3D9 /* TwitterJGCM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterJGCM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2618431EA5140400E6C3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA26184A1EA5140400E6C3D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA26184D1EA5140400E6C3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA26184F1EA5140400E6C3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2618551EA5156400E6C3D9 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		FA2618571EA6696C00E6C3D9 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28347B98FFFF9C37235D7A7D /* Pods_TwitterJGCM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9F5DF2323E256EC136F25B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B321C705DE1127E50E77C88 /* Pods-TwitterJGCM.debug.xcconfig */,
+				C66A7817CB96649C59FBE8CC /* Pods-TwitterJGCM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB4BEAD5F45A5529C90EE17A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E86CCB0F2B386661B01B04F3 /* Pods_TwitterJGCM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA2618371EA5140400E6C3D9 = {
 			isa = PBXGroup;
 			children = (
 				FA2618421EA5140400E6C3D9 /* TwitterJGCM */,
 				FA2618411EA5140400E6C3D9 /* Products */,
+				B9F5DF2323E256EC136F25B4 /* Pods */,
+				EB4BEAD5F45A5529C90EE17A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2618551EA5156400E6C3D9 /* HomeController.swift */,
+				FA2618571EA6696C00E6C3D9 /* HomeDatasourceController.swift */,
 				FA2618431EA5140400E6C3D9 /* AppDelegate.swift */,
 				FA26184A1EA5140400E6C3D9 /* Assets.xcassets */,
 				FA26184C1EA5140400E6C3D9 /* LaunchScreen.storyboard */,
@@ -68,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA2618521EA5140400E6C3D9 /* Build configuration list for PBXNativeTarget "TwitterJGCM" */;
 			buildPhases = (
+				051005DA0175BBBCE6D04C35 /* [CP] Check Pods Manifest.lock */,
 				FA26183C1EA5140400E6C3D9 /* Sources */,
 				FA26183D1EA5140400E6C3D9 /* Frameworks */,
 				FA26183E1EA5140400E6C3D9 /* Resources */,
+				13CDAA678AE3B7D5EFC77151 /* [CP] Embed Pods Frameworks */,
+				8890A8AE33270A9A344CE962 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,12 +158,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		051005DA0175BBBCE6D04C35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		13CDAA678AE3B7D5EFC77151 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitterJGCM/Pods-TwitterJGCM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8890A8AE33270A9A344CE962 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitterJGCM/Pods-TwitterJGCM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA26183C1EA5140400E6C3D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FA2618441EA5140400E6C3D9 /* AppDelegate.swift in Sources */,
+				FA2618581EA6696C00E6C3D9 /* HomeDatasourceController.swift in Sources */,
 				FA2618561EA5156400E6C3D9 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,11 +328,12 @@
 		};
 		FA2618531EA5140400E6C3D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B321C705DE1127E50E77C88 /* Pods-TwitterJGCM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y6SZS4JQ7Q;
 				INFOPLIST_FILE = TwitterJGCM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JGCM.TwitterJGCM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,11 +343,12 @@
 		};
 		FA2618541EA5140400E6C3D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C66A7817CB96649C59FBE8CC /* Pods-TwitterJGCM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y6SZS4JQ7Q;
 				INFOPLIST_FILE = TwitterJGCM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JGCM.TwitterJGCM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
