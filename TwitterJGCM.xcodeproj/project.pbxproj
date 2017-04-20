@@ -13,6 +13,8 @@
 		FA26184E1EA5140400E6C3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA26184C1EA5140400E6C3D9 /* LaunchScreen.storyboard */; };
 		FA2618561EA5156400E6C3D9 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2618551EA5156400E6C3D9 /* HomeController.swift */; };
 		FA2618581EA6696C00E6C3D9 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2618571EA6696C00E6C3D9 /* HomeDatasourceController.swift */; };
+		FA2618B01EA8621700E6C3D9 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2618AF1EA8621700E6C3D9 /* Cells.swift */; };
+		FA2618B21EA8626B00E6C3D9 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2618B11EA8626B00E6C3D9 /* HomeDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FA26184F1EA5140400E6C3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2618551EA5156400E6C3D9 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		FA2618571EA6696C00E6C3D9 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
+		FA2618AF1EA8621700E6C3D9 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		FA2618B11EA8626B00E6C3D9 /* HomeDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +82,40 @@
 		FA2618421EA5140400E6C3D9 /* TwitterJGCM */ = {
 			isa = PBXGroup;
 			children = (
+				FA2618AD1EA8619F00E6C3D9 /* Model */,
+				FA2618AE1EA861A900E6C3D9 /* View */,
+				FA2618AC1EA8619300E6C3D9 /* Controller */,
 				FA2618551EA5156400E6C3D9 /* HomeController.swift */,
-				FA2618571EA6696C00E6C3D9 /* HomeDatasourceController.swift */,
 				FA2618431EA5140400E6C3D9 /* AppDelegate.swift */,
 				FA26184A1EA5140400E6C3D9 /* Assets.xcassets */,
 				FA26184C1EA5140400E6C3D9 /* LaunchScreen.storyboard */,
 				FA26184F1EA5140400E6C3D9 /* Info.plist */,
 			);
 			path = TwitterJGCM;
+			sourceTree = "<group>";
+		};
+		FA2618AC1EA8619300E6C3D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA2618571EA6696C00E6C3D9 /* HomeDatasourceController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FA2618AD1EA8619F00E6C3D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA2618B11EA8626B00E6C3D9 /* HomeDataSource.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FA2618AE1EA861A900E6C3D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA2618AF1EA8621700E6C3D9 /* Cells.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +241,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2618B21EA8626B00E6C3D9 /* HomeDataSource.swift in Sources */,
 				FA2618441EA5140400E6C3D9 /* AppDelegate.swift in Sources */,
+				FA2618B01EA8621700E6C3D9 /* Cells.swift in Sources */,
 				FA2618581EA6696C00E6C3D9 /* HomeDatasourceController.swift in Sources */,
 				FA2618561EA5156400E6C3D9 /* HomeController.swift in Sources */,
 			);
