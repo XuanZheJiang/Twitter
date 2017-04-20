@@ -85,11 +85,11 @@
 				FA2618AD1EA8619F00E6C3D9 /* Model */,
 				FA2618AE1EA861A900E6C3D9 /* View */,
 				FA2618AC1EA8619300E6C3D9 /* Controller */,
-				FA2618551EA5156400E6C3D9 /* HomeController.swift */,
 				FA2618431EA5140400E6C3D9 /* AppDelegate.swift */,
 				FA26184A1EA5140400E6C3D9 /* Assets.xcassets */,
 				FA26184C1EA5140400E6C3D9 /* LaunchScreen.storyboard */,
 				FA26184F1EA5140400E6C3D9 /* Info.plist */,
+				FA2618551EA5156400E6C3D9 /* HomeController.swift */,
 			);
 			path = TwitterJGCM;
 			sourceTree = "<group>";
