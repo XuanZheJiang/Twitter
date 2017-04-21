@@ -1,59 +1,27 @@
 //
-//  Cells.swift
+//  UserCell.swift
 //  TwitterJGCM
 //
-//  Created by JGCM on 2017/4/20.
+//  Created by JGCM on 2017/4/21.
 //  Copyright © 2017年 JGCM. All rights reserved.
 //
 
 import LBTAComponents
 
-class UserHeader: DatasourceCell {
-    
-    let textLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16)
-        label.text = "WHO TO FOLLOW"
-        return label
-    }()
-    
-    override func setupViews() {
-        super.setupViews()
-        addSubview(textLabel)
-        textLabel.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 12, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
-    }
-    
-    
-    
-}
-
-class UserFooter: DatasourceCell {
-    
-    let textLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 15)
-        label.textColor = UIColor(r: 61, g: 167, b: 244)
-        label.text = "Show me more"
-        return label
-    }()
-    
-    override func setupViews() {
-        super.setupViews()
-        addSubview(textLabel)
-        textLabel.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 12, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
-    }
-}
-
 class UserCell: DatasourceCell {
     
     override var datasourceItem: Any? {
         didSet {
-            nameLabel.text = datasourceItem as? String
+            guard let user = datasourceItem as? User else { return }
+            nameLabel.text = user.name
+            userNameLabel.text = user.userName
+            bioTextView.text = user.bioText
+            profileImageView.image = user.profileImage
         }
     }
     
     let profileImageView: UIImageView = {
-       let imageView = UIImageView()
+        let imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "head")
         imageView.layer.cornerRadius = 5
         imageView.clipsToBounds = true
@@ -100,6 +68,8 @@ class UserCell: DatasourceCell {
     
     override func setupViews() {
         super.setupViews()
+        separatorLineView.isHidden = false
+        separatorLineView.backgroundColor = UIColor(r: 230, g: 230, b: 230)
         
         addSubview(nameLabel)
         addSubview(profileImageView)
@@ -119,3 +89,4 @@ class UserCell: DatasourceCell {
     }
     
 }
+
