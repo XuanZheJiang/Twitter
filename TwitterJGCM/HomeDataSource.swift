@@ -14,14 +14,7 @@ class HomeDataSource: Datasource {
         let brianUser = User(name: "TEST", userName: "testtesttest", bioText: "some more bio testsome more bio testsome more bio test", profileImage: #imageLiteral(resourceName: "head"))
         let jxzUser = User(name: "JXZ", userName: "Xuanzhe Jiang", bioText: "some more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio test", profileImage: #imageLiteral(resourceName: "follow"))
         let jxzUser1 = User(name: "JXZ", userName: "Xuanzhe Jiang", bioText: "some more bio testsome more bio testsome more bio testsome more bio testsome more bio tesome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more biotsome more bio testsome more bio testsome more bio test", profileImage: #imageLiteral(resourceName: "follow"))
-        let jxzUser2 = User(name: "JXZ", userName: "Xuanzhe Jiang", bioText: "some more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio test", profileImage: #imageLiteral(resourceName: "follow"))
-        let jxzUser3 = User(name: "JXZ", userName: "Xuanzhe Jiang", bioText: "some more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio test", profileImage: #imageLiteral(resourceName: "follow"))
-        let jxzUser4 = User(name: "JXZ", userName: "Xuanzhe Jiang", bioText: "some more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio test", profileImage: #imageLiteral(resourceName: "follow"))
-        let jxzUser5 = User(name: "JXZ", userName: "Xuanzhe Jiang", bioText: "some more bio testsome more bio e bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more biotsome more bio testsome more bio testsome more bio testsome more bio test", profileImage: #imageLiteral(resourceName: "follow"))
-        let jxzUser6 = User(name: "JXZ", userName: "Xuanzhe Jiang", bioText: "some more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio test", profileImage: #imageLiteral(resourceName: "follow"))
-        let jxzUser7 = User(name: "JXZ", userName: "Xuanzhe Jiang", bioText: "some more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio test", profileImage: #imageLiteral(resourceName: "follow"))
-        let jxzUser8 = User(name: "JXZ", userName: "Xuanzhe Jiang", bioText: "some more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bioome more bio testsome more bio testsome more bio testsome more bio testsome more bio testsome more bio test", profileImage: #imageLiteral(resourceName: "follow"))
-        return [jxzUser, brianUser, jxzUser1, jxzUser2, jxzUser3, jxzUser4, jxzUser5, jxzUser6, jxzUser7, jxzUser8]
+        return [jxzUser, brianUser, jxzUser1]
     }()
     
     override func headerClasses() -> [DatasourceCell.Type]? {
@@ -33,7 +26,7 @@ class HomeDataSource: Datasource {
     }
     
     override func cellClasses() -> [DatasourceCell.Type] {
-        return [UserCell.self]
+        return [UserCell.self, TwitterCell.self]
     }
     
     override func item(_ indexPath: IndexPath) -> Any? {
